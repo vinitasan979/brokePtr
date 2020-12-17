@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0221"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/user_pwd"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="270dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="80dp"
+        android:background="#546A7B"
+        android:text="LogIn"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_pwd" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="270dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="28dp"
+        android:background="#546A7B"
+        android:fontFamily="monospace"
+        android:text="Sign up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="397dp"
+        android:layout_height="191dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lightbluelogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

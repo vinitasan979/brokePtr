@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "474619830921",
+    "project_id": "broke-petr-d6155",
+    "storage_bucket": "broke-petr-d6155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474619830921:android:78e93bb1304de2dfe79c58",
+        "android_client_info": {
+          "package_name": "com.example.myapp_broke_petr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474619830921-24rekiku846svebh8mu760hdm6j4ie00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDeZLiz-mBH7sEvdiIwp7PUZYGpLzzK4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474619830921-24rekiku846svebh8mu760hdm6j4ie00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
