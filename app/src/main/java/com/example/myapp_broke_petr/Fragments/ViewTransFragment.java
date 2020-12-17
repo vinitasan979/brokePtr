@@ -1,4 +1,4 @@
-package com.example.myapp_broke_petr;
+package com.example.myapp_broke_petr.Fragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.example.myapp_broke_petr.Fragments.DataFragment;
+import com.example.myapp_broke_petr.R;
+
 public class ViewTransFragment extends Fragment {
 
     RelativeLayout rlaLL;
@@ -20,8 +23,6 @@ public class ViewTransFragment extends Fragment {
     RelativeLayout rlFood;
     RelativeLayout rlSub;
     RelativeLayout rlMis;
-
-
 
 
 

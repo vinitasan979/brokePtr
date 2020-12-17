@@ -2,6 +2,7 @@ package com.example.myapp_broke_petr;
 
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Transaction {
@@ -17,5 +18,24 @@ public class Transaction {
         this.product = product;
         this.category = category;
         this.amount = amount;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+
+    public String getCategory() {
+        return category;
+    }
+
+    public float getAmount() {
+        return amount;
+    }
+
+
+
+    public String getProduct() {
+        return product;
     }
 }

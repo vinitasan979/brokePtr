@@ -13,7 +13,23 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17be2e1d-8eca-4ce2-b64d-510bdf8895b4" name="Default Changelist" comment="" />
+    <list default="true" id="17be2e1d-8eca-4ce2-b64d-510bdf8895b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Adapters/TransAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/delete_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_trans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/AddItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/AddItemFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/DataFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/DataFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Main2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Main2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/ViewTransFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ViewTransFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_trans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_trans.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +51,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
@@ -62,8 +79,8 @@
       <recent name="com.example.myapp_broke_petr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\vini\myapp_broke_petr\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\vini\myapp_broke_petr\app\src\main\res\drawable" />
+      <recent name="C:\Users\vini\myapp_broke_petr\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,10 +157,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608200237855">
+    <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608207342453">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1608200237855" />
+    <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1608207342453" />
+    <state x="723" y="223" width="479" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608205892847">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="723" y="223" width="479" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720@0.0.1280.720" timestamp="1608205892847" />
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608193583075">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -152,38 +173,38 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="442" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1608188791276" />
-    <state x="442" y="119" key="AndroidCreateResourceFileDialog" timestamp="1608166346111">
+    <state x="442" y="119" key="AndroidCreateResourceFileDialog" timestamp="1608204689102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="442" y="119" key="AndroidCreateResourceFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1608166346111" />
+    <state x="442" y="119" key="AndroidCreateResourceFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1608204689102" />
     <state x="740" y="119" key="FileChooserDialogImpl" timestamp="1608170917333">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="740" y="119" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1608170917333" />
-    <state width="970" height="178" key="GridCell.Tab.0.bottom" timestamp="1608175873118">
+    <state width="1236" height="175" key="GridCell.Tab.0.bottom" timestamp="1608207844565">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="970" height="178" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1608175873118" />
-    <state width="970" height="178" key="GridCell.Tab.0.center" timestamp="1608175873117">
+    <state width="1236" height="175" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1608207844565" />
+    <state width="1236" height="175" key="GridCell.Tab.0.center" timestamp="1608207844565">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="970" height="178" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1608175873117" />
-    <state width="970" height="178" key="GridCell.Tab.0.left" timestamp="1608175873117">
+    <state width="1236" height="175" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1608207844565" />
+    <state width="1236" height="175" key="GridCell.Tab.0.left" timestamp="1608207844565">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="970" height="178" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1608175873117" />
-    <state width="970" height="178" key="GridCell.Tab.0.right" timestamp="1608175873117">
+    <state width="1236" height="175" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1608207844565" />
+    <state width="1236" height="175" key="GridCell.Tab.0.right" timestamp="1608207844565">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="970" height="178" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1608175873117" />
+    <state width="1236" height="175" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1608207844565" />
     <state x="452" y="139" key="chooseDestDirectoryDialog" timestamp="1608181489866">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="452" y="139" key="chooseDestDirectoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1608181489866" />
-    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608203026911">
+    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608208894822">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608203026911" />
+    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608208894822" />
     <state x="618" y="164" key="run.anything.popup" timestamp="1608173704065">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

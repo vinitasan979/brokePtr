@@ -1,4 +1,4 @@
-package com.example.myapp_broke_petr;
+package com.example.myapp_broke_petr.Fragments;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -24,7 +24,11 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.myapp_broke_petr.LoginActivity;
+import com.example.myapp_broke_petr.R;
+import com.example.myapp_broke_petr.Transaction;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -181,6 +185,8 @@ public class AddItemFragment extends Fragment {
                 Transaction transaction= new Transaction(date,product,category,amount);
                 //set this object as the value of the key created
                 myRef.child(keyid).setValue(transaction);
+                Toast.makeText(getContext(), "Item Added", Toast.LENGTH_LONG).show();
+
 
 
             }

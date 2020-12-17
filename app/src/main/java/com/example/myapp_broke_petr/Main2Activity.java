@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.myapp_broke_petr.Fragments.AddItemFragment;
+import com.example.myapp_broke_petr.Fragments.HomeFragment;
+import com.example.myapp_broke_petr.Fragments.ViewTransFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Main2Activity extends AppCompatActivity {
