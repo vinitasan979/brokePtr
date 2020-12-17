@@ -82,12 +82,13 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
                             gotoHome();
 
                         }
                         else{
                             Toast.makeText(LoginActivity.this, "error:"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            user_email.setText("");
 
                         }
                     }

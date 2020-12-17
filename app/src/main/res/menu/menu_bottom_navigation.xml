@@ -5,26 +5,31 @@
     <item
         android:id="@+id/opHome"
 
-        android:icon="@android:drawable/ic_menu_myplaces"
+        android:icon="@drawable/ic_baseline_home_24"
         android:title="Home"
         android:visible="true"
         app:showAsAction="always" />
     <item
         android:id="@+id/opAdd"
-        android:icon="@android:drawable/ic_menu_add"
+        android:icon="@drawable/ic_baseline_add_24"
         android:title="Add"
         android:visible="true"
         app:showAsAction="always" />
     <item
         android:id="@+id/opTrans"
-        android:icon="@android:drawable/ic_input_get"
+        android:icon="@drawable/ic_baseline_collections_bookmark_24"
         android:title="Transactions"
         android:visible="true"
         app:showAsAction="always" />
     <item
         android:id="@+id/opSearch"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
         android:title="Search"
         android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/opShowReport"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Reports"
         app:showAsAction="always" />
 </menu>

@@ -93,6 +93,7 @@ public class SignUp extends AppCompatActivity {
                         }
                         else{
                             Toast.makeText(SignUp.this, "Something went wrong. Please try again", Toast.LENGTH_SHORT).show();
+                            etpwd.setText("");
 
                         }
                     }

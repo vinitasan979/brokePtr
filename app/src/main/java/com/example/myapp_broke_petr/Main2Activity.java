@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.myapp_broke_petr.Fragments.AddItemFragment;
 import com.example.myapp_broke_petr.Fragments.HomeFragment;
+import com.example.myapp_broke_petr.Fragments.ReportsFragment;
 import com.example.myapp_broke_petr.Fragments.SearchFragment;
 import com.example.myapp_broke_petr.Fragments.ViewTransFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -62,10 +63,14 @@ public class Main2Activity extends AppCompatActivity {
 
 
                 }
-                else{
-                    fragment= new HomeFragment();
+                else if(menuItem.getItemId() == R.id.opShowReport)
+                {
+                    //Toast.makeText(Main2Activity.this, "Clicked on Search", Toast.LENGTH_SHORT).show();
+                    fragment= new ReportsFragment();
+
 
                 }
+
 
 
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
@@ -73,6 +78,8 @@ public class Main2Activity extends AppCompatActivity {
                 return true;
             }
         });
+        // Set default selection
+        bottomNavigationView.setSelectedItemId(R.id.opHome);
 
     }
 }

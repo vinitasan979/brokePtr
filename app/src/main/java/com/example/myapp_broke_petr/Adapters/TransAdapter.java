@@ -73,8 +73,8 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
         public void bind(Transaction transaction) {
             tvProduct.setText(transaction.getProduct());
             itemCategory.setText(transaction.getCategory());
-            tvAmount.setText(getDateString(transaction));
-            tvDate.setText(getAmountString(transaction));
+            tvDate.setText(getDateString(transaction));
+            tvAmount.setText(getAmountString(transaction));
 
         }
 

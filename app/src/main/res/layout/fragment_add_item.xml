@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.AddItemFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/etDate"
@@ -13,10 +16,23 @@
         android:layout_height="55dp"
         android:layout_below="@+id/imageView2"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Select Date" />
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@+id/etDate"
+        android:fontFamily="monospace"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etProduct"
@@ -24,11 +40,24 @@
         android:layout_height="55dp"
         android:layout_below="@+id/opCat"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="7dp"
         android:ems="10"
         android:hint="Enter Product Name"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toStartOf="@+id/etProduct"
+        android:fontFamily="monospace"
+        android:text="Product"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etAmount"
@@ -36,11 +65,24 @@
         android:layout_height="56dp"
         android:layout_below="@+id/etProduct"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="6dp"
         android:ems="10"
         android:hint="Enter Amount"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_toStartOf="@+id/etAmount"
+        android:fontFamily="monospace"
+        android:text="Amount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/opCat"
@@ -48,9 +90,22 @@
         android:layout_height="55dp"
         android:layout_below="@+id/etDate"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
         android:animateLayoutChanges="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_below="@+id/header1"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/opCat"
+        android:fontFamily="monospace"
+        android:text="Category"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnAdd"
@@ -60,7 +115,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
         android:background="#0D0221"
         android:fontFamily="monospace"
@@ -79,56 +134,6 @@
         android:layout_marginEnd="0dp"
         android:src="@drawable/transheader" />
 
-    <TextView
-        android:id="@+id/header1"
-        android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="50dp"
-        android:layout_toStartOf="@+id/etDate"
-        android:fontFamily="monospace"
-        android:text="Date"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="52dp"
-        android:layout_below="@+id/header1"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
-        android:layout_toStartOf="@+id/opCat"
-        android:fontFamily="monospace"
-        android:text="Category"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="25dp"
-        android:layout_toStartOf="@+id/etProduct"
-        android:fontFamily="monospace"
-        android:text="Product"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="36dp"
-        android:layout_toStartOf="@+id/etAmount"
-        android:fontFamily="monospace"
-        android:text="Amount"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
 </RelativeLayout>
+
+</ScrollView>

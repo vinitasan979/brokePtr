@@ -36,7 +36,8 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${appCompatVersion}"
     implementation "com.google.android.material:material:${designSupportVersion}"
 
-    //rounded Image View
+    //Pie Chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }
 
