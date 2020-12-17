@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                         else{
                             Toast.makeText(LoginActivity.this, "error:"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            user_email.setText("");
+                            user_pwd.setText("");
 
                         }
                     }

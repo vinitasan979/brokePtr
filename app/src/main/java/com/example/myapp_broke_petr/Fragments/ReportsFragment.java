@@ -48,7 +48,10 @@ public class ReportsFragment extends Fragment {
     int item_count=0; //total number of logged transactions
     private float[] yData={};
     private String[] xData={"Home and Utilities","Entertainment","Food","Subscriptions","Miscellaneous"};
-    BarChart barChart; //bar chart for spending in different categories
+    //BarChart barChart; //bar chart for spending in different categories
+
+    PieChart pieChart; //pie chart contain spending in each category.
+
 
     //firebase componenets
     private FirebaseDatabase database;
@@ -84,7 +87,13 @@ public class ReportsFragment extends Fragment {
         tvLogged=view.findViewById(R.id.tvLogged);
 
 
-        barChart= (BarChart) view.findViewById(R.id.pcSpendCat);
+        pieChart= (PieChart) view.findViewById(R.id.pcSpendCat);
+        pieChart.setRotationEnabled(true);
+        pieChart.setHoleRadius(35f);
+        pieChart.setCenterText("Spending in Each Category");
+        pieChart.setCenterTextSize(10);
+
+
 
         //intialize categories for calculation
         calculations.put("Home and Utilities", (float) 0.0);
@@ -118,7 +127,7 @@ public class ReportsFragment extends Fragment {
                 }
                 String count=item_count+ " times.";
                 tvLogged.setText(count);
-                addDataSet(barChart);
+                addDataSet(pieChart);
 
 
             }
@@ -137,30 +146,51 @@ public class ReportsFragment extends Fragment {
 
     }
 
-    private void addDataSet(BarChart barChart) {
+    private void addDataSet(PieChart pieChart) {
         ArrayList<PieEntry> yPoints= new ArrayList<>();
         ArrayList<String> xPoints=new ArrayList<>();
 
-        List<BarEntry> entries=new ArrayList<>();
+        //List<BarEntry> entries=new ArrayList<>();
 
 
         for(int i=0; i<xData.length;i++)
         {
-            //xPoints.add(xData[i]);
+            xPoints.add(xData[i]);
             float frac=(float)(calculations.get(xData[i])/calculations.get("Total"));
             Log.d("Fracs", String.valueOf(frac));
-            //yPoints.add(new PieEntry(frac,i));
-            entries.add(new BarEntry((float)i,frac));
+            yPoints.add(new PieEntry(frac,i));
+            //entries.add(new BarEntry((float)i,frac));
 
         }
 
         //create dataset
-        BarDataSet barDataSet= new BarDataSet(entries,"BarDataSet");
+        PieDataSet pieDataSet=new PieDataSet(yPoints,"PieDataSet");
+        pieDataSet.setSliceSpace(3);
+        pieDataSet.setValueTextSize(8);
+       // BarDataSet barDataSet= new BarDataSet(entries,"BarDataSet");
+        //set the colors
+        ArrayList<Integer> colors = new ArrayList<>();
+        colors.add(Color.BLUE);
+        colors.add(Color.MAGENTA);
+        colors.add(Color.LTGRAY);
+        colors.add(Color.YELLOW);
+        colors.add(Color.GREEN);
+
+        pieDataSet.setColors(colors);
+
+        //create pie object
+        PieData pieData=new PieData(pieDataSet);
+        pieChart.setData(pieData);
+        pieChart.invalidate();
+
+
+
+
+
         //set the data
-        BarData data=new BarData(barDataSet);
-        barChart.setData(data);
-        barChart.setFitBars(true);
-        barChart.invalidate();
+        //BarData data=new BarData(barDataSet);
+        //barChart.setData(data);
+        //barChart.setFitBars(true);
 
 
 

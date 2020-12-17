@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.ReportsFragment">
 
-    <com.github.mikephil.charting.charts.BarChart
+    <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pcSpendCat"
         android:layout_width="match_parent"
         android:layout_height="498dp"
-        android:layout_below="@+id/tvLogged"
+        android:layout_below="@+id/textView8"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="64dp"></com.github.mikephil.charting.charts.BarChart>
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="63dp"></com.github.mikephil.charting.charts.PieChart>
 
     <TextView
         android:id="@+id/textView6"
@@ -43,4 +43,16 @@
         android:textColor="#875C74"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogged"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="64dp"
+        android:text="Click on the chart section to view more info" />
 </RelativeLayout>
