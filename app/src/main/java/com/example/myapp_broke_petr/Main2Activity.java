@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.myapp_broke_petr.Fragments.AddItemFragment;
 import com.example.myapp_broke_petr.Fragments.HomeFragment;
+import com.example.myapp_broke_petr.Fragments.SearchFragment;
 import com.example.myapp_broke_petr.Fragments.ViewTransFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -36,24 +37,37 @@ public class Main2Activity extends AppCompatActivity {
                 {
                     fragment= new HomeFragment();
 
-                    Toast.makeText(Main2Activity.this, "Clicked on Home", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Main2Activity.this, "Clicked on Home", Toast.LENGTH_SHORT).show();
 
                 }
                 else if(menuItem.getItemId() == R.id.opAdd)
                 {
-                    Toast.makeText(Main2Activity.this, "Clicked on Add", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Main2Activity.this, "Clicked on Add", Toast.LENGTH_SHORT).show();
                     fragment= new AddItemFragment();
 
 
                 }
 
-                if(menuItem.getItemId() == R.id.opTrans)
+                else if(menuItem.getItemId() == R.id.opTrans)
                 {
                     fragment= new ViewTransFragment();
 
-                    Toast.makeText(Main2Activity.this, "Clicked on Trans", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Main2Activity.this, "Clicked on Trans", Toast.LENGTH_SHORT).show();
 
                 }
+                else if(menuItem.getItemId() == R.id.opSearch)
+                {
+                    //Toast.makeText(Main2Activity.this, "Clicked on Search", Toast.LENGTH_SHORT).show();
+                    fragment= new SearchFragment();
+
+
+                }
+                else{
+                    fragment= new HomeFragment();
+
+                }
+
+
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
 
                 return true;

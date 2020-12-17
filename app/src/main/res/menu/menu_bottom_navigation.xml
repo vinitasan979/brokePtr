@@ -21,4 +21,10 @@
         android:title="Transactions"
         android:visible="true"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/opSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        android:visible="true"
+        app:showAsAction="always" />
 </menu>
