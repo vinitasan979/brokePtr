@@ -84,7 +84,7 @@ public class ViewTransFragment extends Fragment {
 
                 //pass data on to the frag to tell which category was selected
                 Bundle bundle= new Bundle();
-                bundle.putString("category","util");
+                bundle.putString("category","Home and Utilities");
                 dataFragment.setArguments(bundle);
                 //switch fragments
                 FragmentManager manager=getFragmentManager();
@@ -99,7 +99,7 @@ public class ViewTransFragment extends Fragment {
 
                 //pass data on to the frag to tell which category was selected
                 Bundle bundle= new Bundle();
-                bundle.putString("category","entertain");
+                bundle.putString("category","Entertainment");
                 dataFragment.setArguments(bundle);
                 //switch fragments
                 FragmentManager manager=getFragmentManager();
@@ -114,7 +114,7 @@ public class ViewTransFragment extends Fragment {
 
                 //pass data on to the frag to tell which category was selected
                 Bundle bundle= new Bundle();
-                bundle.putString("category","food");
+                bundle.putString("category","Food");
                 dataFragment.setArguments(bundle);
                 //switch fragments
                 FragmentManager manager=getFragmentManager();
@@ -129,7 +129,7 @@ public class ViewTransFragment extends Fragment {
 
                 //pass data on to the frag to tell which category was selected
                 Bundle bundle= new Bundle();
-                bundle.putString("category","sub");
+                bundle.putString("category","Subscriptions");
                 dataFragment.setArguments(bundle);
                 //switch fragments
                 FragmentManager manager=getFragmentManager();
@@ -144,7 +144,7 @@ public class ViewTransFragment extends Fragment {
 
                 //pass data on to the frag to tell which category was selected
                 Bundle bundle= new Bundle();
-                bundle.putString("category","mis");
+                bundle.putString("category","Miscellaneous");
                 dataFragment.setArguments(bundle);
                 //switch fragments
                 FragmentManager manager=getFragmentManager();

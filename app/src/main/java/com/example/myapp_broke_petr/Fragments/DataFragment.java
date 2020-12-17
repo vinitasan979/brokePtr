@@ -98,8 +98,13 @@ public class DataFragment extends Fragment {
                 allPurchases.clear(); //restart data to get most recent data
                 for (DataSnapshot d: snapshot.getChildren())
                 {
+
                     Transaction t= d.getValue(Transaction.class); //make value a transaction object
-                    allPurchases.add(t);
+                    //Create the list allPurchases based on the selected category
+                    if(selectedCat.equals("all") || selectedCat.equals(t.getCategory()))
+                    {
+                        allPurchases.add(t);
+                    }
                 }
                 adapter= new TransAdapter(context,allPurchases);
                 rvItems.setAdapter(adapter);
