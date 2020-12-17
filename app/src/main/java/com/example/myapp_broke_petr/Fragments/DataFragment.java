@@ -1,11 +1,14 @@
 package com.example.myapp_broke_petr.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -14,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
+import com.example.myapp_broke_petr.Adapters.TransAdapter;
 import com.example.myapp_broke_petr.R;
 import com.example.myapp_broke_petr.Transaction;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,8 +34,10 @@ import java.util.ArrayList;
 public class DataFragment extends Fragment {
 
 
+    Context context;
     TextView tvHeading;
     RecyclerView rvItems;
+    String selectedCat;
 
     private FirebaseDatabase database;
     private DatabaseReference myRef;
@@ -57,6 +63,7 @@ public class DataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        context=getContext();
         return inflater.inflate(R.layout.fragment_data, container, false);
     }
 
@@ -67,12 +74,15 @@ public class DataFragment extends Fragment {
         tvHeading=view.findViewById(R.id.tvHeading);
         //get arguments passed from TransFragment
         Bundle bundle=this.getArguments();
-        String cat=bundle.getString("category");
+        selectedCat=bundle.getString("category");
 
-        tvHeading.setText(cat);
+        tvHeading.setText(selectedCat);
 
+        //Set up Recycler view components
         rvItems=view.findViewById(R.id.rvItems);
         allPurchases= new ArrayList<Transaction>();
+        rvItems.setLayoutManager(new LinearLayoutManager(context));
+        rvItems.addItemDecoration(new DividerItemDecoration(rvItems.getContext(),DividerItemDecoration.VERTICAL));
 
         //initialize firebase components
         mAuth = FirebaseAuth.getInstance();
@@ -86,14 +96,22 @@ public class DataFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 allPurchases.clear(); //restart data to get most recent data
-                for (DataSnapshot)
+                for (DataSnapshot d: snapshot.getChildren())
+                {
+                    Transaction t= d.getValue(Transaction.class); //make value a transaction object
+                    allPurchases.add(t);
+                }
+                adapter= new TransAdapter(context,allPurchases);
+                rvItems.setAdapter(adapter);
+                adapter.notifyDataSetChanged();
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        })
+        });
 
 
 

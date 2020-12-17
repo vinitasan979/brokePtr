@@ -13,6 +13,9 @@ public class Transaction {
 
     private static DecimalFormat df = new DecimalFormat("0.00");
 
+    public  Transaction(){
+
+    }
     public Transaction(Date date, String product, String category, float amount) {
         this.date = date;
         this.product = product;
