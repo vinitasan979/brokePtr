@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,8 +10,10 @@
 
     <TextView
         android:id="@+id/tvHeading"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_width="359dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
         android:fontFamily="serif-monospace"
         android:text="Heading"
         android:textAlignment="center"
@@ -21,5 +24,19 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="683dp"
+        android:layout_below="@+id/tvHeading"
+        android:layout_marginTop="14dp" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/tvHeading"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_baseline_arrow_black" />
+
+</RelativeLayout>

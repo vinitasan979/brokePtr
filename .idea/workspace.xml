@@ -15,15 +15,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17be2e1d-8eca-4ce2-b64d-510bdf8895b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_black.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/DataFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/DataFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_data.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608248230176</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Pie Chart Animations">
+      <created>1608249993596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608249993596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,7 +215,8 @@
     <MESSAGE value="Search Functionality Implemented" />
     <MESSAGE value="Add Transaction count" />
     <MESSAGE value="Added Pie Chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Pie Chart" />
+    <MESSAGE value="Added Pie Chart Animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Pie Chart Animations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608220413065">
@@ -225,10 +239,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="442" y="119" key="AndroidCreateResourceFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1608204689102" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608248229179">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608249992749">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608248229179" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608249992749" />
     <state x="740" y="119" key="FileChooserDialogImpl" timestamp="1608170917333">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -253,10 +267,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="452" y="139" key="chooseDestDirectoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1608181489866" />
-    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608249628856">
+    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608250526941">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608249628856" />
+    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608250526941" />
     <state x="618" y="164" key="run.anything.popup" timestamp="1608173704065">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

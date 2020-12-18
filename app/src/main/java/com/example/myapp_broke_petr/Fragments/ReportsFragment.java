@@ -49,7 +49,6 @@ public class ReportsFragment extends Fragment {
 
     TextView tvLogged;
     int item_count=0; //total number of logged transactions
-    private float[] yData={};
     private String[] xData={"Home and Utilities","Entertainment","Food","Subscriptions","Miscellaneous"};
     //BarChart barChart; //bar chart for spending in different categories
 
@@ -62,9 +61,8 @@ public class ReportsFragment extends Fragment {
     FirebaseAuth mAuth;
     FirebaseUser curr_user;
 
-
-
     HashMap<String, Float> calculations=new HashMap<String,Float>();
+
     public ReportsFragment() {
         // Required empty public constructor
     }
@@ -108,7 +106,6 @@ public class ReportsFragment extends Fragment {
 
 
 
-
         //setting up firebase
         mAuth = FirebaseAuth.getInstance();
         curr_user=mAuth.getCurrentUser();
@@ -125,15 +122,20 @@ public class ReportsFragment extends Fragment {
                     Transaction t= d.getValue(Transaction.class); //make value a transaction object
                     //update total amount spent in category
                     String key=t.getCategory();
+
+                    //add up amount of each category and also total amount
                     calculations.put(key,calculations.get(key)+(float)t.getAmount());
                     calculations.put("Total",calculations.get(key)+(float)t.getAmount());
 
 
                 }
+
+                //set text for total logged transactions
                 String count=item_count+ " times.";
                 tvLogged.setText(count);
                 addDataSet(pieChart);
 
+                //create listener so user can get more information when clicked
                 pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
                     @Override
                     public void onValueSelected(Entry e, Highlight h) {
@@ -143,8 +145,10 @@ public class ReportsFragment extends Fragment {
                         int pos=e.toString().indexOf("y: ");
                         //skip y: and get only the value
                         String amt=e.toString().substring((pos+3));
+                        //fall back, so no outbounds error
                         pos=0;
 
+                        //look for respective category
                         for (int j=0;j<xData.length;j++){
                             if(calculations.get(xData[j])== Float.parseFloat(amt))
                             {
@@ -157,6 +161,7 @@ public class ReportsFragment extends Fragment {
 
                         String cat=xData[pos];
 
+                        //Display toast
                         String displayMsg="Category: "+cat+"\n";
                         Toast.makeText(context,displayMsg,Toast.LENGTH_SHORT).show();
                     }
@@ -187,14 +192,11 @@ public class ReportsFragment extends Fragment {
 
     private void addDataSet(PieChart pieChart) {
         ArrayList<PieEntry> yPoints= new ArrayList<>();
-        ArrayList<String> xPoints=new ArrayList<>();
 
-        //List<BarEntry> entries=new ArrayList<>();
-
-
+        //init yPoints with data type Pie entry made from the calculations
         for(int i=0; i<xData.length;i++)
         {
-            xPoints.add(xData[i]);
+
             float frac=(float)(calculations.get(xData[i])/calculations.get("Total"));
             Log.d("Fracs", String.valueOf(frac));
             yPoints.add(new PieEntry(frac,i));
@@ -208,7 +210,7 @@ public class ReportsFragment extends Fragment {
         PieDataSet pieDataSet=new PieDataSet(yPoints,"PieDataSet");
         pieDataSet.setSliceSpace(3);
         pieDataSet.setValueTextSize(8);
-       // BarDataSet barDataSet= new BarDataSet(entries,"BarDataSet");
+
         //set the colors
         ArrayList<Integer> colors = new ArrayList<>();
         colors.add(Color.BLUE);

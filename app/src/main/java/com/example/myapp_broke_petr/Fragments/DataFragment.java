@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -38,6 +40,7 @@ public class DataFragment extends Fragment {
     TextView tvHeading;
     RecyclerView rvItems;
     String selectedCat;
+    ImageButton btnBack;
 
     private FirebaseDatabase database;
     private DatabaseReference myRef;
@@ -77,6 +80,20 @@ public class DataFragment extends Fragment {
         selectedCat=bundle.getString("category");
 
         tvHeading.setText(selectedCat);
+
+        //Set up back button
+        btnBack=view.findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //go back to View Trans Fragment
+                //switch fragments
+                ViewTransFragment viewTransFragment= new ViewTransFragment();
+
+                FragmentManager manager=getFragmentManager();
+                manager.beginTransaction().replace(R.id.flContainer, viewTransFragment).commit();
+            }
+        });
 
         //Set up Recycler view components
         rvItems=view.findViewById(R.id.rvItems);
