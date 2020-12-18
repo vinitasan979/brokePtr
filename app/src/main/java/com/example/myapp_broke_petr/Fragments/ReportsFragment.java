@@ -162,7 +162,7 @@ public class ReportsFragment extends Fragment {
                         String cat=xData[pos];
 
                         //Display toast
-                        String displayMsg="Category: "+cat+"\n";
+                        String displayMsg="Category: "+cat+"\n"+"Spending: "+ amt+"%";
                         Toast.makeText(context,displayMsg,Toast.LENGTH_SHORT).show();
                     }
 

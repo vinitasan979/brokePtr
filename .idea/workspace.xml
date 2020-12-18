@@ -15,8 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17be2e1d-8eca-4ce2-b64d-510bdf8895b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Adapters/TransAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Adapters/TransAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/DataFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/DataFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608256985753</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Documentation">
+      <created>1608257292452</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608257292452</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,7 +249,8 @@
     <MESSAGE value="Error checking" />
     <MESSAGE value="Removed Bottom Sheet" />
     <MESSAGE value="Fixed Bug that cut off last item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Bug that cut off last item" />
+    <MESSAGE value="Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608253041898">
@@ -258,10 +273,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="442" y="119" key="AndroidCreateResourceFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1608251267856" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608256984653">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608257291901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608256984653" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608257291901" />
     <state x="740" y="119" key="FileChooserDialogImpl" timestamp="1608256238825">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
