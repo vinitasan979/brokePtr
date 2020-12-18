@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //Change Action bar
+        //Change Action bar Title
         ActionBar actionBar= getSupportActionBar();
         actionBar.setTitle("Log In");
 
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            //Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
+                            //if user is logged send them to the home page
                             gotoHome();
 
                         }
@@ -109,6 +109,6 @@ public class LoginActivity extends AppCompatActivity {
         //create intent to send user to sign in page
         Intent intent= new Intent(this,SignUp.class);
         startActivity(intent);
-        finish();
+
     }
 }

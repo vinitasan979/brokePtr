@@ -80,7 +80,7 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
         public String getAmountString(Transaction transaction){
             DecimalFormat df = new DecimalFormat("#.##");
             String strAmount=df.format(transaction.getAmount());
-            return strAmount;
+            return "$ "+strAmount;
         }
 
         public String getDateString(Transaction transaction){

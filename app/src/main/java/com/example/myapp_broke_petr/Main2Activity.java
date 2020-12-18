@@ -33,6 +33,7 @@ public class Main2Activity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                //setthe fragment to the option clicked
                 Fragment fragment = new Fragment();
                 if(menuItem.getItemId() == R.id.opHome)
                 {
@@ -73,6 +74,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
 
+                //replace container of fragment with respected choice.
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
 
                 return true;

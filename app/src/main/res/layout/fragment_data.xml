@@ -24,9 +24,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
-        android:layout_height="683dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvHeading"
-        android:layout_marginTop="14dp" />
+        android:layout_marginTop="7dp"
+        android:scrollbars="vertical"
+        android:paddingBottom="56dp"
+
+        />
 
     <ImageButton
         android:id="@+id/btnBack"
