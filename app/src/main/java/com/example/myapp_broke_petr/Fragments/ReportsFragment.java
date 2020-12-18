@@ -1,5 +1,6 @@
 package com.example.myapp_broke_petr.Fragments;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myapp_broke_petr.R;
 import com.example.myapp_broke_petr.Transaction;
@@ -43,6 +45,7 @@ import java.util.Map;
 
 public class ReportsFragment extends Fragment {
 
+    Context context;
 
     TextView tvLogged;
     int item_count=0; //total number of logged transactions
@@ -70,6 +73,7 @@ public class ReportsFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        context=getContext();
         super.onCreate(savedInstanceState);
 
     }
@@ -87,14 +91,6 @@ public class ReportsFragment extends Fragment {
         tvLogged=view.findViewById(R.id.tvLogged);
 
 
-        pieChart= (PieChart) view.findViewById(R.id.pcSpendCat);
-        pieChart.setRotationEnabled(true);
-        pieChart.setHoleRadius(35f);
-        pieChart.setCenterText("Spending in Each Category");
-        pieChart.setCenterTextSize(10);
-
-
-
         //intialize categories for calculation
         calculations.put("Home and Utilities", (float) 0.0);
         calculations.put("Total", (float) 0.0);
@@ -102,6 +98,15 @@ public class ReportsFragment extends Fragment {
         calculations.put("Food", (float) 0.0);
         calculations.put("Subscriptions", (float) 0.0);
         calculations.put("Miscellaneous", (float) 0.0);
+
+        //set up pie chart
+        pieChart= (PieChart) view.findViewById(R.id.pcSpendCat);
+        pieChart.setRotationEnabled(true);
+        pieChart.setHoleRadius(35f);
+        pieChart.setCenterText("Spending in Each Category");
+        pieChart.setCenterTextSize(10);
+
+
 
 
         //setting up firebase
@@ -129,6 +134,39 @@ public class ReportsFragment extends Fragment {
                 tvLogged.setText(count);
                 addDataSet(pieChart);
 
+                pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
+                    @Override
+                    public void onValueSelected(Entry e, Highlight h) {
+                        //entry contains a string of format Entry x: xvalues ycd: yvalue
+
+                        Log.d("ENtry e",e.toString());
+                        int pos=e.toString().indexOf("y: ");
+                        //skip y: and get only the value
+                        String amt=e.toString().substring((pos+3));
+                        pos=0;
+
+                        for (int j=0;j<xData.length;j++){
+                            if(calculations.get(xData[j])== Float.parseFloat(amt))
+                            {
+                                Log.d("Positions","found");
+                                pos=j;
+                                break;
+                            }
+                        }
+                        Log.d("Positions", String.valueOf(pos));
+
+                        String cat=xData[pos];
+
+                        String displayMsg="Category: "+cat+"\n";
+                        Toast.makeText(context,displayMsg,Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onNothingSelected() {
+
+                    }
+                });
+
 
             }
 
@@ -138,6 +176,7 @@ public class ReportsFragment extends Fragment {
             }
         });
         Log.d("Calculation", String.valueOf(calculations));
+
 
 
 
@@ -159,7 +198,9 @@ public class ReportsFragment extends Fragment {
             float frac=(float)(calculations.get(xData[i])/calculations.get("Total"));
             Log.d("Fracs", String.valueOf(frac));
             yPoints.add(new PieEntry(frac,i));
-            //entries.add(new BarEntry((float)i,frac));
+
+            //update cal
+            calculations.put(xData[i],frac);
 
         }
 
@@ -184,13 +225,6 @@ public class ReportsFragment extends Fragment {
         pieChart.invalidate();
 
 
-
-
-
-        //set the data
-        //BarData data=new BarData(barDataSet);
-        //barChart.setData(data);
-        //barChart.setFitBars(true);
 
 
 
