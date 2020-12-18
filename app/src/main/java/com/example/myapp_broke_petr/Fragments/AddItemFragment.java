@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapp_broke_petr.BottomSheetDialog;
 import com.example.myapp_broke_petr.LoginActivity;
 import com.example.myapp_broke_petr.R;
 import com.example.myapp_broke_petr.Transaction;
@@ -171,28 +173,38 @@ public class AddItemFragment extends Fragment {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+            if(etAmount.getText().toString().isEmpty() || etProduct.getText().toString().isEmpty()){
+                    Toast.makeText(getContext(), "Please fill alll fields", Toast.LENGTH_LONG).show();
+
+                }
+
+            else {
 
                 //get user inputs
-                product=etProduct.getText().toString();
-                amount=Float.parseFloat(etAmount.getText().toString());
+                product = etProduct.getText().toString();
+                amount = Float.parseFloat(etAmount.getText().toString());
 
                 //add transcation under logged in user
-                curr_user=mAuth.getCurrentUser();
-                myRef=database.getReference(curr_user.getUid()).child("transactions");
+                curr_user = mAuth.getCurrentUser();
+                myRef = database.getReference(curr_user.getUid()).child("transactions");
                 //create a new key for the transaction
-                String keyid=myRef.push().getKey();
+                String keyid = myRef.push().getKey();
                 //create new transaction object
-                Transaction transaction= new Transaction(date,product,category,amount);
+                Transaction transaction = new Transaction(date, product, category, amount);
                 //set this object as the value of the key created
                 myRef.child(keyid).setValue(transaction);
                 Toast.makeText(getContext(), "Item Added", Toast.LENGTH_LONG).show();
+            }
 
 
 
             }
         });
 
+
+
+
     }
-    public void openDialog(){}
+
 
 }

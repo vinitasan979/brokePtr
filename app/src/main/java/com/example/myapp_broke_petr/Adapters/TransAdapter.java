@@ -66,7 +66,6 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
             tvAmount=itemView.findViewById(R.id.tvAmount);
             tvDate=itemView.findViewById(R.id.tvDate);
             tvProduct=itemView.findViewById(R.id.tvProduct);
-            ibDelete=itemView.findViewById(R.id.ibDelete);
 
         }
 
