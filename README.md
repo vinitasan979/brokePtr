@@ -24,7 +24,8 @@ Broke Peter is a spending tracker that records your transactions and analyzes th
 * **Transaction Dairy** : Display all previous transaction logged by the user. User can pick which category they wish to see or if they wish to see all transaction. No requirements of these pages were changed 
 * **Search page** : User can search a product in the logs. Not case sensitive. Has to be an exact match.No requirements of these pages were changed.
 
-## DEMO<img src='https://github.com/vinitasan979/brokePtr/blob/master/brokePtr_demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+## DEMO
+<img src='https://github.com/vinitasan979/brokePtr/blob/master/brokePtr_demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
