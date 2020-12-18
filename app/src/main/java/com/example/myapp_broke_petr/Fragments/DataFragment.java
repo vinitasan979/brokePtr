@@ -98,7 +98,10 @@ public class DataFragment extends Fragment {
         //Set up Recycler view components
         rvItems=view.findViewById(R.id.rvItems);
         allPurchases= new ArrayList<Transaction>();
+        //Set a linear Layout inside the recycler view
+        //Items will appear one after another linearly
         rvItems.setLayoutManager(new LinearLayoutManager(context));
+        //add space between each item
         rvItems.addItemDecoration(new DividerItemDecoration(rvItems.getContext(),DividerItemDecoration.VERTICAL));
 
         //initialize firebase components
@@ -123,8 +126,11 @@ public class DataFragment extends Fragment {
                         allPurchases.add(t);
                     }
                 }
+                //create adapter with data from the firebase date
                 adapter= new TransAdapter(context,allPurchases);
+                //set adapter to recycler view
                 rvItems.setAdapter(adapter);
+                //refresh recycler view
                 adapter.notifyDataSetChanged();
 
             }

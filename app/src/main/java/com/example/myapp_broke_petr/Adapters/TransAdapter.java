@@ -58,9 +58,9 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
         TextView tvAmount;
         TextView tvDate;
         TextView tvProduct;
-        ImageButton ibDelete;
 
         public ViewHolder(@NonNull View itemView) {
+            //bind variables to views
             super(itemView);
             itemCategory=itemView.findViewById(R.id.tvCat);
             tvAmount=itemView.findViewById(R.id.tvAmount);
@@ -70,6 +70,7 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
         }
 
         public void bind(Transaction transaction) {
+            //bind data to UI components
             tvProduct.setText(transaction.getProduct());
             itemCategory.setText(transaction.getCategory());
             tvDate.setText(getDateString(transaction));
@@ -78,12 +79,14 @@ public class TransAdapter extends RecyclerView.Adapter<TransAdapter.ViewHolder>{
         }
 
         public String getAmountString(Transaction transaction){
+            //Function to convert amount(float) to a formatted string: $+ rounded to 2 decimal points
             DecimalFormat df = new DecimalFormat("#.##");
             String strAmount=df.format(transaction.getAmount());
             return "$ "+strAmount;
         }
 
         public String getDateString(Transaction transaction){
+            //Function to convert Date to a formatted string
             SimpleDateFormat formatter= new SimpleDateFormat("dd MMMM yyyy");
             String strDate=formatter.format(transaction.getDate());
             return strDate;
