@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -89,6 +90,8 @@ public class SignUp extends AppCompatActivity {
                             myRef.child("password").setValue(password);
 
                             //send user to home screen
+                            gotoHome();
+
 
                         }
                         else{
@@ -106,6 +109,13 @@ public class SignUp extends AppCompatActivity {
 
 
 
+    }
+
+    private void gotoHome() {
+        //create intent to send user to home page
+        Intent intent= new Intent(this,Main2Activity.class);
+        startActivity(intent);
+        finish();
     }
 }
 

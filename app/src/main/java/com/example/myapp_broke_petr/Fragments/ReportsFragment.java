@@ -19,6 +19,7 @@ import com.example.myapp_broke_petr.R;
 import com.example.myapp_broke_petr.Transaction;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -103,6 +104,8 @@ public class ReportsFragment extends Fragment {
         pieChart.setHoleRadius(35f);
         pieChart.setCenterText("Spending in Each Category");
         pieChart.setCenterTextSize(10);
+        Description description=pieChart.getDescription();
+        description.setEnabled(false);
 
 
 

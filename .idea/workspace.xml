@@ -24,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/Fragments/ReportsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapp_broke_petr/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608257292452</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed Pi UI">
+      <created>1608257554899</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608257554899</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,7 +258,8 @@
     <MESSAGE value="Removed Bottom Sheet" />
     <MESSAGE value="Fixed Bug that cut off last item" />
     <MESSAGE value="Documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
+    <MESSAGE value="Changed Pi UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Pi UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="783" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608253041898">
@@ -273,10 +282,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="442" y="119" key="AndroidCreateResourceFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1608251267856" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608257291901">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1608257554060">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608257291901" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1608257554060" />
     <state x="740" y="119" key="FileChooserDialogImpl" timestamp="1608256238825">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -301,10 +310,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="452" y="139" key="chooseDestDirectoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1608181489866" />
-    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608256807186">
+    <state width="300" height="66" key="javadoc.popup.new" timestamp="1608258779472">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608256807186" />
+    <state width="300" height="66" key="javadoc.popup.new/0.0.1280.720@0.0.1280.720" timestamp="1608258779472" />
     <state x="618" y="164" key="run.anything.popup" timestamp="1608173704065">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
